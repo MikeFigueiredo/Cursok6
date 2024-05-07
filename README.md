@@ -2,7 +2,7 @@ Esse projeto foi criado durante a realização do curso "Testes de Performance c
 
 Ele executa exemplos práticos dos tipos de teste de performance que podemos criar utilizando a ferramenta K6. 
 
-Deixarei aqui uma descrição dos tipos de testes possíveis de serem realizados com o K6 (Essas são as minhas anotações durante a realização do curso, espero que seja útil) 
+Deixarei aqui uma descrição dos tipos de testes que podem ser realizados utilizando o K6 (Essas são as minhas anotações durante a realização do curso, espero que seja útil) 
 
 Smoke testing -> Visa validar o mínimo funcionamento após uma modificação no sistema, para o k6 as suas características são:
  - 01: Carga mínima
