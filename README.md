@@ -131,12 +131,6 @@ Faça uma análise da infraestrutura do sistema antes de executar o teste, veja 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Comandos k6
-
-k6 run nome_arquivo -> Executa o script do k6
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
 Métricas -> Medem o desempenho do sistema em situações de teste.
 
 1 - Contadores -> Somas e incrementos
@@ -159,14 +153,6 @@ Existem 3 tipos diferentes de módulos, são eles:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Groups - Grupo de transações, eles são uma forma de organizar scripts, na prática eles funcionam como o it() do Cypress
-
-O que é uma transação?
- - Qualquer processo que executa algo no sistema, como uma requisição, um cadastro, uma consulta, etc.
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
 Tags - Uma maneira de rotular elementos com o k6
 
 Podemos rotular, adicionando uma tag aos seguintes itens:
@@ -177,14 +163,6 @@ Podemos rotular, adicionando uma tag aos seguintes itens:
  - Todas as métricas de um teste
 
 Tags podem ser utilizadas em conjunto com groups
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Grafana Cloud K6 - Características
-
- - Escalabilidade
- - Flexibilidade geográfica
- - Confiança nos resultados
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -235,37 +213,7 @@ Pontos de atenção
 
 Seu sistema deve passar pelos outros tipos de testes antes do breaking point teste ser realizado
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Scenarios
-
-1 - Organização do teste
-2 - Simulações mais realistas
-3 - Cargas de trabalho paralelas ou sequenciais
-4 - Análise granular dos resultados
-
-Options disponíveis
- 1 - executor
- 2 - startTime
- 3 - gracefulstop
- 4 - exec
- 5 - env
- 6 - tags
-
-Executores
- - shared-iterations - Um número fixo de vus completa um número fixo de iterações
- - per-vu-iterations - Cada VU executa um número exato de iterações. Número total de iterações: VU x Iterações
- - constant-vus - Um número fixo de VUs executar quantas requisições forem possíveis.
- - constant-arrival-rate - Número fixo de iterações iniciadas pelo k6. Novas interações iniciadas enquanto houver VUs disponíveis. Novas iterações seguindo sempre a taxa configurada
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Github Actions -> Plataforma de automação de workflow de integração e entrega contínua dentro do github, com ele é possível configurar fluxo de trabalho dentro da aplicação diretamente no repositório do seu código.
-
-
-Para inserir o github Actions no projeto, é necessário:
-- criar uma pasta chamada .github e dentro dela, uma subpasta chamada workflows.
-- Dentro da pasta workflows, criar um arquivo test.yml
 
 
 
